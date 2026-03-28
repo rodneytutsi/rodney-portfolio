@@ -340,7 +340,7 @@
         </a>
         <a href="https://linkedin.com/in/rodney-mavhunduke-231b74160" target="_blank" class="btn btn-outline">LinkedIn</a>
         <a href="https://github.com/rodneytutsi" target="_blank" class="btn btn-outline">GitHub</a>
-        <a href="https://iamtutsirai.wordpress.com" target="_blank" class="btn btn-blog">
+        <a href="httpiamtutsirai.wordpress.com" target="_blank" class="btn btn-blog">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           My Blog
         </a>
@@ -540,7 +540,7 @@
         <div class="blog-banner-desc">Thoughts, insights, and experiences on cybersecurity, information systems, and the digital world — from a student and practitioner's perspective.</div>
         <div class="blog-url">iamtutsirai.wordpress.com</div>
       </div>
-      <a href="https://iamtutsirai.wordpress.com" target="_blank" class="btn btn-blog" style="flex-shrink:0;">
+      <a href="httpiamtutsirai.wordpress.com" target="_blank" class="btn btn-blog" style="flex-shrink:0;">
         <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         Visit Blog
       </a>
@@ -611,9 +611,22 @@
   document.addEventListener('mouseup',   () => dot.style.transform = 'translate(-50%,-50%) scale(1)');
 
   // ── ACTIVATE CERT LINKS when file is found ──
-   //Remove .unavailable once you've uploaded your PDFs to GitHub
+  // Remove .unavailable once you've uploaded your PDFs to GitHub
   // You can also do it selectively per cert by commenting out lines below:
-  // document.querySelector('#certs a[href*="comptia"]').classList.remove('unavailable');
+  <div class="cert-card">
+        <div class="cert-logo-wrap" style="background:#1a1f2e;padding:6px;">
+          <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" alt="TryHackMe" onerror="this.outerHTML='<span style=font-size:1.4rem>🧩</span>'"/>
+        </div>
+        <div class="cert-info">
+          <div class="cert-name">Pre Security</div>
+          <div class="cert-issuer">TryHackMe</div>
+          <a class="cert-pdf-link unavailable" href="https://raw.githubusercontent.com/rodneytutsi/portfolio/main/certs/tryhackme-presecurity.pdf" target="_blank">
+            <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+      document.querySelector('#certs a[href*="comptia"]').classList.remove('unavailable');
 </script>
 </body>
 </html>
