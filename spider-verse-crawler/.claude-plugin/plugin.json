@@ -1,0 +1,1 @@
+{ "name": "spider-verse-crawler", "version": "0.1.0", "description": "A glitchy Spider-Verse style spider crawls across the prompt area when Claude opens (and on /spider).", "types": "./types/index.d.ts" }
