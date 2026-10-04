@@ -1,0 +1,11 @@
+{
+  "name": "rodney-mods",
+  "owner": { "name": "Rodney Tutsi" },
+  "plugins": [
+    {
+      "name": "spider-verse-crawler",
+      "source": "./spider-verse-crawler",
+      "description": "A glitchy Spider-Verse style spider crawls across the prompt area when Claude opens (and on /spider)."
+    }
+  ]
+}
